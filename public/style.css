@@ -1,7 +1,7 @@
 main{
     height: 98vh;
     width: auto;
-    grid-template-rows: 70px 1fr;
+    grid-template-rows: 70px 40px 1fr;
     grid-template-columns: 1fr;
     display: grid;
     font-family: 'Roboto', sans-serif;
@@ -17,6 +17,12 @@ h1{
     color: white;
 }
 
+#inputField{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    padding-top: 10px;
+    padding-left: 20px;
+}
 #content{
     grid-row: 1fr;
     grid-column: 1fr;
