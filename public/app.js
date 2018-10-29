@@ -17,11 +17,11 @@ const render = function(outputElement, dataList) {
 //add a new todo item to list
 $(".fa-share").on("click", function(event) {
   event.preventDefault();
-  // $('#content').html('');
+  $('#content').html('');
   const newInput = {task: $('#newInput').val().trim(), done: false};
-  const newInputList = [newInput];
+  // const newInputList = [newInput];
   $.ajax({ url: '/api/todolist/', method: 'POST', data: newInput}).then(function(list){
-    render("content", list);
+    render("#content", list);
     $('#newInput').val('');
   });
 });
